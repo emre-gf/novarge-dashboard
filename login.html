@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html x-data="main" class="" :class="[$store.app.mode]">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Premium Tailwind CSS Admin & Dashboard Template" />
+    <meta name="author" content="Webonzer" />
+
+    <!-- Site Tiltle -->
+    <title>Snow - Tailwind CSS Admin & Dashboard Template</title>
+
+    <!-- Site favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body
+    class="antialiased relative font-inter bg-white dark:bg-black text-black dark:text-white text-sm font-normal overflow-x-hidden">
+    <!-- Start Header -->
+    <header>
+        <nav class="bg-white dark:bg-black px-4 lg:px-7 py-4">
+            <div class="flex flex-wrap justify-center items-center pt-8">
+                <a href="index.html" class="flex items-center">
+                    <img :src="$store.app.mode === 'dark' ? 'assets/images/logo/dark-logo.svg' : 'assets/images/logo/light-logo.svg'"
+                        alt="logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+    <!-- Start Content -->
+    <div class="min-h-[calc(100vh-180px)] py-4 px-4 sm:px-12 flex justify-center items-center">
+        <div
+            class="max-w-[680px] flex-none w-full bg-black/5 dark:bg-white/10 p-4 sm:p-10 lg:px-[146px] lg:py-[107px] rounded-2xl loginform">
+            <h1 class="text-2xl font-semibold mb-2 text-center">Oturum Açın!</h1>
+            <p class="text-center text-black/40 dark:text-white/40 mb-7">Uzaktan eğitime şimdi Novarge ile başla!</p>
+            <div class="flex flex-wrap items-center gap-4 mb-7">
+                <a href="javaScript:;"
+                    class="flex flex-1 items-center content-evenly gap-2 py-1 pl-2 pr-3 h-10 border bg-white dark:bg-black/80 border-black/10 dark:border-white/10 hover:border-black dark:hover:border-white rounded-lg transition-all duration-300">
+                    <div class="justify-center items-center flex">
+                        <img class="w-6 h-6"
+                            :src="$store.app.mode === 'dark' ? 'assets/images/logo/apple-dark-logo.svg': 'assets/images/apple-icon.svg'" />
+                    </div>
+                    <p class="whitespace-nowrap">Apple ile giriş yap</p>
+                </a>
+                <a href="javaScript:;"
+                    class="flex flex-1 items-center content-evenly gap-2 py-1 pl-2 pr-3 h-10 border bg-white dark:bg-black/80 border-black/10 dark:border-white/10 hover:border-black dark:hover:border-white rounded-lg transition-all duration-300">
+                    <div class="justify-center items-center flex">
+                        <img class="w-6 h-6" src="assets/images/google.svg" />
+                    </div>
+                    <p class="whitespace-nowrap">Google ile giriş yap</p>
+                </a>
+            </div>
+            <div class="flex items-center mb-7">
+                <div class="w-full h-[2px] bg-black/10 dark:bg-white/10"></div>
+                <div class="text-black/40 dark:text-white/40 px-5 whitespace-nowrap">yada e-posta ile devam et</div>
+                <div class="w-full h-[2px] bg-black/10 dark:bg-white/10"></div>
+            </div>
+            <form class="mb-4">
+                <div class="mb-4">
+                    <input type="text" value="" placeholder="E-posta" class="form-input" />
+                </div>
+                <div class="mb-2">
+                    <input type="password" value="" placeholder="Parola" class="form-input" />
+                </div>
+                <div class="mb-7 text-right">
+                    <a href="forgot-password.html" class="text-white-100">Parolamı unuttum!</a>
+                </div>
+                <button type="button"
+                    class="py-2 px-4 bg-[#0E0E0E] dark:bg-white w-full rounded-xl text-white dark:text-black text-lg font-normal border border-black dark:border-white hover:bg-transparent dark:hover:bg-transparent hover:text-black dark:hover:text-white transition-all duration-300">
+                    Giriş yap
+                </button>
+            </form>
+            <p class="text-center">
+                <span class="text-black/40 dark:text-white/40">Hesabın yokmu? Buradan</span>
+                <a href="signup.html" class="text-white-100 dark:text-black-100">Kayıt Olun!</a>
+            </p>
+        </div>
+    </div>
+    <!-- End Content -->
+    <!-- Start Footer -->
+    <footer class="p-7 flex items-center justify-center">
+        <p class="text-xs text-black/40 dark:text-white/40">&copy; 2024 Novarge Bilişim Reklam ve Eğitim Hizmetleri A.Ş.
+            Tüm Hakları Saklıdır.</p>
+    </footer>
+    <!-- End Footer -->
+    <!-- All javascirpt -->
+    <!-- Alpine js -->
+    <script src="assets/js/alpine-collaspe.min.js"></script>
+    <script src="assets/js/alpine-persist.min.js"></script>
+    <script src="assets/js/alpine.min.js" defer></script>
+    <!-- Custom js -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
