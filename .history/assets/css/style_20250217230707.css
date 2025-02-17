@@ -2101,6 +2101,10 @@ table.table-striped tbody tr:nth-child(odd):is(.dark *){
   margin-top: auto;
 }
 
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .line-clamp-1{
   overflow: hidden;
   display: -webkit-box;
@@ -2483,10 +2487,6 @@ table.table-striped tbody tr:nth-child(odd):is(.dark *){
   width: 22PX;
 }
 
-.w-\[240px\]{
-  width: 240px;
-}
-
 .w-\[280px\]{
   width: 280px;
 }
@@ -2525,6 +2525,10 @@ table.table-striped tbody tr:nth-child(odd):is(.dark *){
 
 .w-px{
   width: 1px;
+}
+
+.w-\[240px\]{
+  width: 240px;
 }
 
 .min-w-\[150px\]{

@@ -659,7 +659,7 @@
                             </a>
                         </div>
                         <button type="button" class="relative w-7 h-7 p-1 text-black dark:text-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000000"
                                 viewBox="0 0 256 256">
                                 <path d="M216,128a88,88,0,1,1-88-88A88,88,0,0,1,216,128Z" opacity="0.1"></path>
                                 <path
@@ -681,6 +681,12 @@
                                     d="M13.125 15.625V15C13.125 14.6548 12.8452 14.375 12.5 14.375C12.1548 14.375 11.875 14.6548 11.875 15V15.625C11.875 16.4016 11.3258 16.9508 11.3258 16.9508C10.7766 17.5 10 17.5 10 17.5C9.22335 17.5 8.67417 16.9508 8.67417 16.9508C8.125 16.4016 8.125 15.625 8.125 15.625V15C8.125 14.6548 7.84518 14.375 7.5 14.375C7.15482 14.375 6.875 14.6548 6.875 15L6.875 15.625C6.875 16.9194 7.79029 17.8347 7.79029 17.8347C8.70558 18.75 10 18.75 10 18.75C11.2944 18.75 12.2097 17.8347 12.2097 17.8347C13.125 16.9194 13.125 15.625 13.125 15.625Z"
                                     fill="currentColor" />
                             </svg>
+                            <span class="flex absolute w-3 h-3 right-px top-[5px]">
+                                <span
+                                    class="animate-ping absolute -left-[3px] -top-[3px] inline-flex h-full w-full rounded-full bg-black/50 dark:bg-white/50 opacity-75"></span>
+                                <span
+                                    class="relative inline-flex rounded-full w-[6px] h-[6px] bg-black dark:bg-white"></span>
+                            </span>
                         </button>
                         <button type="button" class="relative w-7 h-7 p-1 text-black dark:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -698,6 +704,13 @@
             <!-- Start Content -->
             <div class="h-[calc(100vh-73px)] overflow-y-auto overflow-x-hidden">
                 <div x-data="sales" class="p-4 sm:p-7 min-h-[calc(100vh-145px)]">
+                    <div class="relative mb-4 w-20">
+                        <select class="form-select font-semibold text-sm px-2 dark:bg-black dark:text-white">
+                            <option class="px-2" value="today">Today</option>
+                            <option class="px-2" value="week">Week</option>
+                            <option class="px-2" value="month">Month</option>
+                        </select>
+                    </div>
                     <div class="flex flex-col gap-7">
                         <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-7">
                             <div class="bg-lightblue-100 rounded-2xl p-6">
