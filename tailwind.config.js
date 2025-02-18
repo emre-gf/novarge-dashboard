@@ -6,6 +6,9 @@ module.exports = {
       center: true,
     },
     extend: {
+      width: {
+        'sidebar': '240px'
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
